@@ -1,4 +1,5 @@
-import { listenLikes, like } from './getlikes';
+import { like } from './getlikes';
+import { listenLikes } from './addlikes';
 
 export const getShowById = async (id) => {
   const response = await fetch(`https://api.tvmaze.com/shows/${id}`);
