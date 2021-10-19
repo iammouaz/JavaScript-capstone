@@ -11,7 +11,6 @@ const createCard = (obj, likes) => {
         <div class="card-body">
           <div class="d-flex flex-row justify-content-between align-items-center">
             <h5 class="card-title">${obj.name}</h5>
-            <span class="genres">${obj.genres}</span>
             <div id="btnLike-${likes}" class="pointer">          
               <i  class="fa-regular fa-heart" "></i>          
               <span id="like-${likes}"></span>
