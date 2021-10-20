@@ -1,19 +1,28 @@
+/* eslint-disable linebreak-style */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: {
+    index: './src/index.js',
+  },
+  devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
+  },
+  // eslint-disable-next-line no-dupe-keys
   devServer: {
     static: './dist',
   },
   plugins: [
     new HtmlWebpackPlugin({
+      title: 'LeaderBoard',
       template: './src/index.html',
     }),
   ],
   output: {
-    filename: 'main.js',
+    filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
