@@ -1,8 +1,6 @@
-const HorrorDiv = document.querySelectorAll('#Horror');
-const ActionDiv = document.querySelectorAll('#Action');
-const DramaDiv = document.querySelectorAll('#Drama');
-
 const HideAction = () => {
+  const DramaDiv = document.querySelectorAll('#Drama');
+  const HorrorDiv = document.querySelectorAll('#Horror');
   // eslint-disable-next-line no-plusplus
   for (let i = 0; i < DramaDiv.length; i++) {
     DramaDiv[i].classList.add('hide');
@@ -14,6 +12,8 @@ const HideAction = () => {
 };
 
 const HideDrama = () => {
+  const HorrorDiv = document.querySelectorAll('#Horror');
+  const ActionDiv = document.querySelectorAll('#Action');
   // eslint-disable-next-line no-plusplus
   for (let i = 0; i < ActionDiv.length; i++) {
     ActionDiv[i].classList.add('hide');
@@ -25,6 +25,8 @@ const HideDrama = () => {
 };
 
 const HideHorror = () => {
+  const ActionDiv = document.querySelectorAll('#Action');
+  const DramaDiv = document.querySelectorAll('#Drama');
   // eslint-disable-next-line no-plusplus
   for (let i = 0; i < ActionDiv.length; i++) {
     ActionDiv[i].classList.add('hide');
