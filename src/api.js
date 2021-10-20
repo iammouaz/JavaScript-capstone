@@ -8,7 +8,7 @@ export const getShowById = async (id) => {
 
 const createCard = (obj, counter, like, api) => {
   const data = `
-    <div class="col">
+    <div id="${obj.genres[0]}" class="col">
       <div class="card">
         <img src="${obj.image.medium}" class="card-img-top img-fluid" alt="Poster of ${obj.name}">
         <div class="card-body">
@@ -29,7 +29,7 @@ const createCard = (obj, counter, like, api) => {
   return data;
 };
 
-const createAlbum = async (arr, main, api) => {
+const ListOfShows = async (arr, main, api) => {
   const container = document.createElement('div');
   container.className = 'container';
   const div = document.createElement('div');
@@ -37,19 +37,19 @@ const createAlbum = async (arr, main, api) => {
   container.appendChild(div);
   const likeList = await like(arr.length, api);
   let counter = 0;
-  arr.forEach((e) => {
-    div.innerHTML += createCard(e, counter, likeList[counter], api);
+  arr.forEach((a) => {
+    div.innerHTML += createCard(a, counter, likeList[counter], api);
     counter += 1;
   });
   main.append(container);
   listenLikes(likeList, api);
 };
 
-let showResults = [];
+let showsArr = [];
 export const loadShows = async (type, main) => {
-  showResults = [];
+  showsArr = [];
   type.forEach((id) => {
-    showResults.push(getShowById(id));
+    showsArr.push(getShowById(id));
   });
-  return createAlbum(await Promise.all(showResults), main);
+  return ListOfShows(await Promise.all(showsArr), main);
 };

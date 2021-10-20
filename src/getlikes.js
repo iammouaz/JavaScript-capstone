@@ -1,18 +1,16 @@
 const api = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/AL2jTAMSIJwCzRL3ICg2';
 
-async function PutLikes(total) {
-  return fetch(`${api}/likes/`)
-    .then((response) => response.json())
-    .then((likes) => likes).catch(() => {
-      const Arrays = [];
-      for (let i = 0; i < total; i += 1) {
-        Arrays.push(0);
-      }
-      return Arrays;
-    });
-}
+const PutLikes = async (total) => fetch(`${api}/likes/`)
+  .then((response) => response.json())
+  .then((likes) => likes).catch(() => {
+    const Arrays = [];
+    for (let i = 0; i < total; i += 1) {
+      Arrays.push(0);
+    }
+    return Arrays;
+  });
 
-async function like(total, api) {
+const like = async (total, api) => {
   const likeList = await PutLikes(total, api);
   const ListLike = [];
   let index = -1;
@@ -25,6 +23,6 @@ async function like(total, api) {
     }
   }
   return ListLike;
-}
+};
 
 export { api, like };
