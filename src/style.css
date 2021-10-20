@@ -4,7 +4,7 @@
 }
 
 .hide {
-  display: none !important;
+  display: none;
 }
 
 .nav-link {
@@ -33,4 +33,18 @@ form {
 
 .show {
   display: block !important;
+  animation: slide-down .8s ease-out;
+
+}
+.shows{
+  transition: 1s ease-in-out;
+}
+.card{
+    transition: 1s ease-in-out;
+
+}
+
+@keyframes slide-down {
+  0% { opacity: 0; -webkit-transform: translateY(100%); }   
+100% { opacity: 1; -webkit-transform: translateY(0); }
 }

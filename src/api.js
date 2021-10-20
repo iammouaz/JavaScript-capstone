@@ -9,7 +9,7 @@ export const getShowById = async (id) => {
 
 const createCard = (obj, counter, like) => {
   const data = `
-    <div id="${obj.genres[0]}" class="col">
+    <div id="${obj.genres[0]}" class="col card">
       <div class="card">
         <img src="${obj.image.medium}" class="card-img-top img-fluid" alt="Poster of ${obj.name}">
         <div class="card-body">
