@@ -1,4 +1,4 @@
-const getCounter = (arr) => arr.length;
+export const getCounter = (ar) => ar.length;
 
 const api = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/';
 const get = '/comments?item_id=';
