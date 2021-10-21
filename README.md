@@ -1,4 +1,4 @@
-# LeaderBoard
+# JavaScript capstone
 
 This project was created with the purpose of showing all the movies that are stored in an API, you can see all the movies and even include more, the movies are sorted by categories and you can also comment if you like a movie or if you don't.
 
