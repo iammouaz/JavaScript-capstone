@@ -2,10 +2,11 @@ import './style.css';
 import * as myModule from './api';
 import { HideAction, HideHorror, HideDrama } from './GenresShow';
 import { loadAllComments } from './commenthundler';
+import * as Count from './Showscounter';
 
 const apiKEY = ['AL2jTAMSIJwCzRL3ICg2'];
 const ShowTV = document.getElementById('ShowTV');
-const Shows = ['2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '18'];
+const Shows = ['2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '18', '105', '31', '1824', '73', '38764', '7019'];
 const DramaSH = document.getElementById('showDrama');
 const HorrorSH = document.getElementById('horrorShow');
 const ActiveSh = document.getElementById('actionShow');
@@ -47,3 +48,7 @@ const modal = `
 `;
 
 ShowTV.insertAdjacentHTML('beforeend', modal);
+
+setTimeout(() => { Count.ActionCount('#Action', 'actionShow'); }, 2000);
+setTimeout(() => { Count.ActionCount('#Horror', 'horrorShow'); }, 2000);
+setTimeout(() => { Count.ActionCount('#Drama', 'showDrama'); }, 2000);
