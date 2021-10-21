@@ -5,3 +5,5 @@ export const ActionCount = (Genres, ID) => {
   id.innerHTML += `(${GenresID.length})`;
   return GenresID.length;
 };
+
+export const CounterMovies = (e) => e.length;

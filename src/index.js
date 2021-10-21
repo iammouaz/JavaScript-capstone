@@ -4,7 +4,7 @@ import { HideAction, HideHorror, HideDrama } from './GenresShow';
 import { loadAllComments } from './commenthundler';
 import * as Count from './Showscounter';
 
-const apiKEY = ['AL2jTAMSIJwCzRL3ICg2'];
+const API = ['AL2jTAMSIJwCzRL3ICg2'];
 const ShowTV = document.getElementById('ShowTV');
 const Shows = ['2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '18', '105', '31', '1824', '73', '38764', '7019'];
 const DramaSH = document.getElementById('showDrama');
@@ -12,12 +12,12 @@ const HorrorSH = document.getElementById('horrorShow');
 const ActiveSh = document.getElementById('actionShow');
 
 myModule.loadShows(Shows, ShowTV);
-loadAllComments(apiKEY, Shows.length);
+loadAllComments(API, Shows.length);
 ActiveSh.addEventListener('click', HideAction);
 DramaSH.addEventListener('click', HideDrama);
 HorrorSH.addEventListener('click', HideHorror);
 
-const modal = `
+const comments = `
 <div class="modal fade" id="mainModal" tabindex="-1" aria-labelledby="mainModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -47,7 +47,7 @@ const modal = `
 </div>
 `;
 
-ShowTV.insertAdjacentHTML('beforeend', modal);
+ShowTV.insertAdjacentHTML('beforeend', comments);
 
 setTimeout(() => { Count.ActionCount('#Action', 'actionShow'); }, 2000);
 setTimeout(() => { Count.ActionCount('#Horror', 'horrorShow'); }, 2000);
