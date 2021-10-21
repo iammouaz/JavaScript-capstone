@@ -20,7 +20,7 @@ const createCard = (obj, counter, like) => {
               <span id="like-${counter}">${like} likes</span>
             </div>
           </div>
-          <button id="btn${counter}" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mainModal" onclick="populateModal(${counter}, 'AL2jTAMSIJwCzRL3ICg2');mainModal.classList.add('show')">
+          <button id="btn${counter}" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mainModal" onclick="FullUpcomments(${counter}, 'AL2jTAMSIJwCzRL3ICg2');mainModal.classList.add('show')">
             Comments
           </button>
         </div>
@@ -57,7 +57,7 @@ export const loadShows = async (type, main, api) => {
   return createAlbum(await Promise.all(showsArr), main, api);
 };
 
-window.populateModal = (id, api) => {
+window.FullUpcomments = (id, api) => {
   const mainModal = document.getElementById('mainModal');
   showsArr[id].then((show) => {
     mainModal.innerHTML = `
@@ -85,11 +85,11 @@ window.populateModal = (id, api) => {
         </div>
         </form>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" onclick="mainModal.classList.remove('show')" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
     `;
   });
-  setTimeout(() => { loadComments(id); }, 100);
+  setTimeout(() => { loadComments(id); }, 1000);
 };

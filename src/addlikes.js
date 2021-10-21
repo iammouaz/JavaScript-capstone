@@ -13,11 +13,11 @@ const AddNewLike = (ItemN) => {
 };
 
 const listenLikes = (LikeItems, api) => {
-  let btnLike;
+  let ButtonL;
   let likeText;
   LikeItems.forEach((element, i) => {
-    btnLike = document.getElementById(`btnLike-${i}`);
-    btnLike.addEventListener('click', () => {
+    ButtonL = document.getElementById(`btnLike-${i}`);
+    ButtonL.addEventListener('click', () => {
       AddNewLike(i, api);
       likeText = document.getElementById(`like-${i}`);
       likeText.removeChild(likeText.firstChild);
