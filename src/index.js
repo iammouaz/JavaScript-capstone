@@ -49,6 +49,6 @@ const comments = `
 
 ShowTV.insertAdjacentHTML('beforeend', comments);
 
-setTimeout(() => { Count.ActionCount('#Action', 'actionShow'); }, 2000);
-setTimeout(() => { Count.ActionCount('#Horror', 'horrorShow'); }, 2000);
-setTimeout(() => { Count.ActionCount('#Drama', 'showDrama'); }, 2000);
+setTimeout(() => { Count.ActionCount('#Action', 'actionShow'); }, 3000);
+setTimeout(() => { Count.ActionCount('#Horror', 'horrorShow'); }, 3000);
+setTimeout(() => { Count.ActionCount('#Drama', 'showDrama'); }, 3000);
