@@ -14,7 +14,7 @@ This project was created with the purpose of showing all the movies that are sto
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://iammouaz.github.io/JavaScript-capstone/)
 
 ## Instalation
 
