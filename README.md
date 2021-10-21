@@ -1,76 +1,53 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# LeaderBoard
 
-# Project Name
+This project was created with the purpose of showing all the movies that are stored in an API, you can see all the movies and even include more, the movies are sorted by categories and you can also comment if you like a movie or if you don't.
 
-> One paragraph statement about the project.
+![screenshot](screenshots/screenshot1.png)
 
-![screenshot](./app_screenshot.png)
+![screenshot](screenshots/screenshot2.png)
 
-Additional description about the project and its features.
+![screenshot](screenshots/screenshot3.png)
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML, JS & CSS
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link]()
 
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
+## Instalation
 
 To get a local copy up and running follow these simple example steps.
+- Open terminal
+- Clone this project by command git clone https://github.com/iammouaz/JavaScript-capstone.git
+- cd to /dist folder
+- ```npm update```
+- ```npm start```
 
 ### Prerequisites
 
-### Setup
-
-### Install
+- IDE to edit and run the code (I've used Visual Studio Code 🔥).
 
 ### Usage
 
-### Run tests
-
-### Deployment
-
-
+- For anyone who wants to practice HTML5 and CSS.
+- Implementation of webpack set up.
+- Implementation of API's.
 
 ## Authors
 
-👤 **Author1**
+👤 **Juan Marcos Mérida**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/marcosmerida)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/marcos-merida-219437206/)
 
-👤 **Author2**
+👤 **Mohammad Moaz El Mulki**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+- GitHub: [@githubhandle](https://github.com/iammouaz)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohammad-mouaz-molki-1368981bb/)
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
