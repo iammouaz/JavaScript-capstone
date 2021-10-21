@@ -1,0 +1,44 @@
+.bg-dark {
+  padding: 10px;
+  padding-left: 68px;
+}
+
+.hide {
+  display: none;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+i {
+  color: red;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+h3 {
+  padding: 0 16px;
+}
+
+form {
+  padding: 0 16px;
+}
+
+#btnComment {
+  margin: 0 auto;
+}
+
+.show {
+  display: block !important;
+  animation: slide-down 0.8s ease-out;
+}
+
+@keyframes slide-down {
+  0% { opacity: 0; }
+  0% { transform: translateY(100%); }
+  100% { opacity: 1; }
+  100% { transform: translateY(0); }
+}
